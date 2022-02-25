@@ -1,0 +1,50 @@
+html {
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.page img {
+  width: 100%;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rating-area {
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 10px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+  position: relative;
+}
+.form-quantity {
+  display: flex;
+}

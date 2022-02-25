@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+        rel="stylesheet">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../scss/header.css">
+    <link rel="stylesheet" href="../scss/main.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header"></div>
+        <main id="main" class="page">
+
+        </main>
+
+
+        <footer class="footer">
+            <div class="footer_nav_list">
+                <div class="footer-nav">
+                    <ul class="footer-list">
+                        <li class="footer-list-item footer-list-title">покупателям</li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="">Каталог</a></li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="">Акции</a></li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="">Бренды</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="footer-list-item footer-list-title">о нас</li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="">О компании</a></li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="">Новости</a></li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="">Команда</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-list">
+                        <form>
+                            <label class="footer-list-title" for="email">узнайте первыми о новинках и акциях</label>
+                            <input type="email" value="" name="email" placeholder="Адрес эоектронно почты" required>
+                            <input type="submit" value="Подписаться" name="subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/script.js"></script>
+    <script>
+        $("#header").load("../templates/_header.html");
+        $("#main").load("../templates/_main.html");
+    </script>
+</body>
+
+</html>

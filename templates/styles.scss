@@ -1,0 +1,468 @@
+@import "_varibles";
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.name-art {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $dark-grey;
+}
+.rating {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400px;
+  @include breakpoint(md) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.rating-area {
+  margin: 0 0.5rem;
+}
+.price {
+  padding: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  &span {
+    display: inline-block;
+  }
+  @include breakpoint(md) {
+    padding: 1rem 0 0 0;
+  }
+}
+.price-new {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.price-old {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $dark-grey;
+  padding: 0 0.5rem;
+}
+.visit {
+  font-size: 26px;
+  font-weight: 400;
+  padding: 0 0 0 0.5rem;
+}
+.visit a {
+  color: $dark-grey;
+}
+
+.column a {
+  z-index: 456;
+}
+.content-page {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  @include breakpoint(sm) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.content-page-item {
+  margin: 0 auto;
+  position: relative;
+  flex: 0 0 50%;
+  @include breakpoint(sm) {
+    flex: 0 0 100%;
+    margin: 0;
+  }
+}
+.page__content_image {
+  padding: 4rem 0 0 6rem;
+  @include breakpoint(lg) {
+    padding: 4rem 0 0 3rem;
+  }
+  @include breakpoint(mdd) {
+    padding: 4rem 0 0 0;
+  }
+}
+.page__content_description {
+  padding: 11rem 0 0 1rem;
+  @include breakpoint(md) {
+    padding: 6rem 0 0 1rem;
+  }
+  @include breakpoint(sm) {
+    padding: 0 0 0 5rem;
+  }
+}
+span.border {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 3px;
+  margin: 1rem 1rem 1rem 0;
+  @include breakpoint(md) {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+  }
+}
+select {
+  display: flex;
+  max-width: 315px;
+  width: 100%;
+  background: #fff;
+  padding: 10px 20px;
+  border: 1px solid $dark-grey;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  @include breakpoint(lg) {
+    max-width: 200px;
+    padding: 5px 10px;
+  }
+}
+.size_select {
+  font-size: 18px;
+  color: $dark-grey;
+  line-height: 24px;
+  @include breakpoint(lg) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @include breakpoint(md) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.size_selection {
+  padding: 1rem 0;
+  @include breakpoint(md) {
+    padding: 0;
+  }
+}
+.product {
+  margin: 0.5rem 0;
+  @include breakpoint(md) {
+    margin: 0;
+  }
+}
+.product a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+  @include breakpoint(md) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+.add-to-cart {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  @include breakpoint(md) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.add_favorite {
+  margin: 0.5rem 0;
+}
+
+.row {
+  position: absolute;
+  z-index: 4;
+}
+.column {
+  height: 100px;
+  width: 100px;
+  padding: 5px 0 0 5px;
+  @include breakpoint(md) {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.row-img {
+  object-fit: contain;
+  max-height: 100%;
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+.Large_image {
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+li a {
+  background-position: left;
+  background-repeat: no-repeat;
+
+  &.desc {
+    background-image: url("../img/icon/Closes.svg");
+  }
+  &.shipping {
+    background-image: url("../img/icon/Delivery.svg");
+  }
+  &.payment {
+    background-image: url("../img/icon/card.svg");
+  }
+  span {
+    padding: 0 0 0 25px;
+  }
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: 1rem 0 0 0;
+  @include breakpoint(sm) {
+    flex-wrap: wrap;
+  }
+}
+.main-picture {
+  flex: 0 0 50%;
+  padding: 0 0 0 6rem;
+  @include breakpoint(lg) {
+    padding: 0 0 0 3rem;
+  }
+  @include breakpoint(mdd) {
+    padding: 0;
+  }
+  @include breakpoint(sm) {
+    flex: 0 0 100%;
+  }
+}
+.sub-picture {
+  display: flex;
+  align-items: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.gallery-item {
+  flex: 1 1 45%;
+}
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  transition: 0.5s ease-out;
+  &.gallery-image:hover {
+    opacity: 0.3;
+  }
+}
+.header__column:first-child {
+  padding: 0 0 0 5rem;
+  flex: 0 0 67px;
+  @include breakpoint(sm) {
+    padding: 0 0 0 15px;
+  }
+}
+
+.item-image {
+  margin: 0 0 0.5rem 0.5rem;
+  @include breakpoint(sm) {
+    margin: 0;
+  }
+}
+
+form {
+  @include breakpoint(mdd) {
+    padding: 0 35px 0 15px;
+  }
+  @include breakpoint(sm) {
+    padding: 2rem 0;
+  }
+}
+
+.add-to-cart .qtyminus,
+.add-to-cart .qtyplus {
+  background: #c4c4c4;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 20px;
+  @include breakpoint(lg) {
+    padding: 10px;
+  }
+  @include breakpoint(md) {
+    padding: 5px;
+  }
+}
+.add-to-cart .qty {
+  width: 60px;
+  text-align: center;
+  background: #c4c4c4;
+  @include breakpoint(md) {
+    width: 40px;
+  }
+}
+.round-black-btn {
+  background: #212529;
+  color: #fff;
+  padding: 20px 45px;
+  display: inline-block;
+  margin: 0 1rem;
+  @include breakpoint(lg) {
+    padding: 10px 20px;
+  }
+  @include breakpoint(md) {
+    margin: 0;
+  }
+}
+a.round-black-btn {
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  @include breakpoint(md) {
+    font-size: 12px;
+  }
+}
+
+.btn {
+  color: #fff;
+  background-color: #212529;
+  font-size: 18px;
+  padding: 20px;
+  @include breakpoint(lg) {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+input[type="email"] {
+  display: block;
+  width: 100%;
+  margin: 60px 0 24px 0;
+  padding: 8px 0;
+  font-size: 14px;
+  outline: none;
+  color: #4d4d4d;
+  border-bottom: 1px solid #333;
+  transition: all 0.2s ease;
+  @include breakpoint(mdd) {
+    margin: 14px 0 17px 0;
+  }
+}
+input[type="email"]:focus {
+  outline: none;
+}
+input[type="submit"] {
+  display: block;
+  padding: 8px 28px;
+  width: 150px;
+  height: 36px;
+  border: 1px solid $dark-grey;
+  outline: none;
+  font-size: 14px;
+  color: $dark-grey;
+  float: right;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  @include breakpoint(mdd) {
+    height: 25px;
+    padding: 0;
+  }
+}
+input[type="submit"]:hover {
+  background-color: $dark-grey;
+}
+
+.footer {
+  padding: 0 0 0 6rem;
+  max-width: 1440px;
+  background-color: #fff;
+  &-nav {
+    flex: 0 1 45%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: $dark-grey;
+  }
+  @include breakpoint(md) {
+    padding: 0 0 0 2rem;
+  }
+  @include breakpoint(mdd) {
+    padding: 0;
+  }
+}
+.footer a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+.footer_nav_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 35px 0 106px 5%;
+  @include breakpoint(md) {
+    margin-left: 0;
+  }
+  @include breakpoint(mdd) {
+    justify-content: flex-start;
+  }
+  @include breakpoint(md) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer-nav {
+  text-align: left;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 45%;
+  flex: 0 1 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #828282;
+  min-width: 300px;
+  @include breakpoint(md) {
+    justify-content: space-around;
+  }
+  @include breakpoint(sm) {
+    flex: 0 0 100%;
+  }
+}
+
+.footer-nav:last-child {
+  max-width: 452px;
+}
+
+.footer-list-title {
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 24px;
+  @include breakpoint(md) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @include breakpoint(mdd) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+.footer-list-link {
+  font-size: 14px;
+  line-height: 20px;
+  @include breakpoint(md) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

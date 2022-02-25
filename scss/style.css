@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: boder-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  font-family: "Open Sans";
+}
+header a,
+.round-black-btn a,
+.rating a,
+.price a {
+  text-decoration: none;
+}
+p {
+  padding: 0.5rem 0;
+}
+.wrapper {
+  margin: 0 auto;
+}
